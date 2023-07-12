@@ -1,7 +1,6 @@
 version: 2
 updates:
-on:
-workflow_dispatch:
+
 
     -   package-ecosystem: "github-actions"
         directory: "/"
@@ -16,7 +15,4 @@ workflow_dispatch:
         schedule:
             interval: "weekly"
 
-- name: Submit Dependency Snapshot
-  uses: advanced-security/maven-dependency-submission-action@v3
 
-  
